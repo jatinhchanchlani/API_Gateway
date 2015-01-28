@@ -13,6 +13,7 @@ require("javascript.util");
 var ArrayList = javascript.util.ArrayList;
 var array = new ArrayList();
 array.add('127.0.0.1');
+array.add('54.69.156.195');
 
 exports.isIPAllowed = function(req, res,next)
 {
