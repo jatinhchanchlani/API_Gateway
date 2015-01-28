@@ -17,15 +17,15 @@ array.add('54.69.156.195');
 
 exports.isIPAllowed = function(req, res,next)
 {
-	console.log(req.connection.remoteAddress);
+	/*console.log(req.connection.remoteAddress);
 	for(var i =0;i<array.size();i++)
 	{
 		if(array.get(i)===req.connection.remoteAddress)
 		{
 			next();
 		}
-	}
-	//next(); // allowing all the IP's for demo purpose
+	}*/
+	next(); // allowing all the IP's for demo purpose
 };
 
 
